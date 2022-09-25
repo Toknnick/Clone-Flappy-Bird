@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Force);
             _rigidbody2D.velocity = new Vector2(_speed, 0);
